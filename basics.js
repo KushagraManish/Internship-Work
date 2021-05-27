@@ -17,7 +17,8 @@ employeeArray = [
         id : 39239,
         name : 'Nikki',
         work : 'System Engineer'
-    }   
+    }
+   
 ]
 
 
@@ -130,6 +131,170 @@ console.log(strSmall)
 console.log(str.toLowerCase.includes('Kushagra'.toLowerCase())) //use toLowerCase to remove case sensititivity
 
 //prints true
+
+// this keyword
+
+account = {
+    name : 'Kushagra Manish',
+    expense : [
+      {
+        descr : 'food',
+        amount : 1000
+      },
+      {
+        descr : 'foods',
+        amount : 130
+    
+      },
+      {
+        descr : 'groceries',
+        amount : 499
+        
+      }],
+      
+      income : [
+        
+        
+        {
+           source: 'work1',
+           amount : 300
+        } , 
+        
+        {
+          source: 'work2',
+           amount : 1000
+        } , 
+        
+        {
+          source: 'work3',
+           amount : 3000
+        }],
+        
+        
+       addIncomes : function(){
+              let sums =0
+         this.income.forEach(function(incomes)
+         {
+           sums += incomes.amount;
+         })
+         
+         return sums;
+       }, 
+           
+           incomeSummary : function(){
+                  return `${this.addIncomes()} is the total income of ${this.name}`
+           }
+,
+        addExpenses : function(){
+        //Using this keyword with reduce.
+            return this.expense.reduce(function(accumulator, currentValue){
+                return accumulator + currentValue.amount;
+            })
+        }
+  }
+  
+  console.log(account.addIncomes());
+  console.log(account.incomeSummary());
+  
+  //Arrow functions simple examples.
+
+
+  addNums = (num1, num2) =>{
+      return num1 + num2;
+  }
+
+  console.log(addNums(2,3));
+
+  // Classes in Js
+
+  class Car{
+      constructor(name, year)
+      {
+          this.name = name
+          this.year = year
+      }
+
+      ageYears()
+      {
+          let date = new Date();
+          return date.getFullYear() - this.year
+      }
+
+  }
+
+  car = new Car('Ford', 2014)
+
+  console.log(car.ageYears())
+
+
+  // Edge case : null
+
+
+  console.log({} === {}) // false : No two objects are exactly equal unless declared so
+
+  //undefined != null
+
+
+  // Getters and Settters
+
+let person = {
+    fname : 'Sahil',
+    lname : 'Bisht',
+    age : 23,
+    set Age(Age){
+        this.age = Age
+    },
+    get fullName(){
+        return this.fname + this.lname;
+    }
+}
+
+person.Age = 25;
+console.log(person);
+console.log(person.fullName);
+
+// object constructor and prototypes
+
+//Basic constructor prototype
+let Person = function(name, age, addr, dob)
+{
+    this.name = name,
+    this.age = age, 
+    this.addr = addr,
+    this.dob = dob
+}
+
+// New prototype
+let mother = new Person("Hu", 34 , "Kochi" , "4-5-2000");
+
+// Can add property to a prototype as: 
+
+Person.prototype.introduction = function(){
+    console.log(`Name : ${this.name} Age : ${this.age}`)
+}
+
+mother.introduction();
+
+// Asynchronus Functions
+
+//Passing one function as arguement to another
+
+myFunction = () =>{
+    return "Hello"
+}
+// Making arrow functions a habbit.
+
+setTimeout(myFunction, 3000);
+
+// Async JS
+// Local storage APIs
+// Form Validation
+
+
+
+
+
+
 
 
 
