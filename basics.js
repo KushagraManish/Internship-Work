@@ -286,12 +286,6 @@ myFunction = () =>{
 
 setTimeout(myFunction, 3000);
 
-// Async JS
-// Local storage APIs
-// Form Validation
-
-
-
 
 
 
