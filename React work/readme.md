@@ -5,7 +5,7 @@
 <p> Each parent folder contains an src folder <p>
 
 <p> For the first three parent folders, you can simply use create-react-app,
-and then replace your src folder with the src folder in these foldder </p>
+and then replace your src folder with the src folder in these folders </p>
 
 <p> For the fourth parent folder : </p>
 
