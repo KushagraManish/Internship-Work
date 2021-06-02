@@ -18,7 +18,8 @@ and then replace your src folder with the src folder in these folders </p>
 		<p>import Setup from *module_name*/setup/*js_file_name*</p>
 		<p>Eg : import Setup from 1-useState/setup/1-error-example
 	</li>
-	<li> Use npm start to view the result, or go to the tutorial folder to find the code. </li>
+	<li> Use npm start to view the result, or go to the tutorial folder> setup folder > js file to find the code. </li>
+	<li> This process can be done a bit more easily using the vscode terminal and the folder viewer. Sorry for the inconvenience </li>
 
 	<li>Sorry for such a tedious process. </li>
 </ol>
