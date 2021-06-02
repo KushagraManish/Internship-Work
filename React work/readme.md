@@ -15,7 +15,7 @@ and then replace your src folder with the src folder in these foldder </p>
 	<li>Go to the tutorial folder in the src folder, and then to the module you want to view, and then the setup folder.</li>
 	<li>Find the js file yoou want to view.</li>
 	<li>Add the following line on the App.js :
-		<p>import Setup from <module_name>/setup/<js_file_name></p>
+		<p>import Setup from *module_name*/setup/*js_file_name*</p>
 		<p>Eg : import Setup from 1-useState/setup/1-error-example
 	</li>
 	<li> Use npm start to view the result, or go to the tutorial folder to find the code. </li>
