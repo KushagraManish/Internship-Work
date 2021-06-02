@@ -21,5 +21,5 @@ and then replace your src folder with the src folder in these folders </p>
 	<li> Use npm start to view the result, or go to the tutorial folder> setup folder > js file to find the code. </li>
 	<li> This process can be done a bit more easily using the vscode terminal and the folder viewer. Sorry for the inconvenience </li>
 
-	<li>Sorry for such a tedious process. </li>
+	
 </ol>
